@@ -316,10 +316,10 @@ overflow-x: hidden;
     cursor: pointer;
 }
 
-.started button a , .view button a{
+/* .started button a , .view button a{
     text-decoration: none;
 
-}
+} */
 
 .view button{
     width: 180px;
@@ -342,7 +342,7 @@ font-weight: 600;
     cursor: pointer;
 }
 
-.started button a{
+/* .started button a{
     color: #fff;
 }
 
@@ -350,7 +350,7 @@ font-weight: 600;
 
 .view button a:hover{
     color: #fff;
-}
+} */
 
 
 .metrics{
@@ -444,8 +444,7 @@ font-weight: 600;
     display: flex;
     justify-content: end;
     gap: 20px;
-    position: relative;
-    z-index: 999; /* Keep these in front */
+ 
 }
 
 .offer{
@@ -457,7 +456,7 @@ font-weight: 600;
     display: flex;
   
     gap: 20px;
-    position: relative;
+  
   
 }
 
@@ -606,6 +605,79 @@ font-size: 16px;
 
 
    @media screen and (max-width:769px) {
+
+    .navigation{
+
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+     
+    }
+
+    .navigation ul{
+        margin-top: 70px;
+     border-top: 2px solid #5369cc;
+      display: flex;
+      padding: 20px;
+      justify-content: space-between;
+      background-color: #fff;
+  }
+  
+  .navigation ul li{
+      list-style-type: none;
+      text-transform: capitalize;
+        position: relative; 
+  
+  }
+  
+  .navigation ul li a{
+      text-decoration: none;
+  
+  }
+  
+  .home , .about , .projects , .contact{
+      display: block;
+        padding-left: 0px;
+       padding: 0px;
+     text-align: center;
+      gap: 10px;
+      transition: 0.3s ease-in;
+  }
+  
+ 
+  
+  .about , .projects , .contact{
+      margin-top: 0px;
+  }
+  
+  .home p a , .about p a , .projects p a , .contact p a{ 
+  margin-top: 5px;
+      font-weight: 600;
+      font-size: 16px;    
+      color: #7a7374;
+  }
+  
+  .home span , .about span , .projects span , .contact span{
+      font-size: 20px;
+      cursor: pointer;
+      color: #5369cc;
+  }
+  
+  
+  
+  .home:hover , .about:hover , .projects:hover , .contact:hover{
+    background-color: transparent;
+    border-left: none;
+}
+  
+  
+  
+  
+  
+  
+  
+
+
     .section1{
         display: none;
     }
@@ -615,12 +687,13 @@ font-size: 16px;
 
     .section2{
         width: 100%;
-        height: 100vh;
+        height: 800px;
         margin-left: 0%;
         padding: 10px;
         position: relative;
         scroll-behavior: smooth;
     overflow-x: hidden;
+  
     }
     
     .section2 .hom  h1{
@@ -696,7 +769,7 @@ font-size: 16px;
     
     
     .abou{
-        height: max-content;
+        height: 1800px;
         padding: 0px;
     }
     
@@ -828,7 +901,7 @@ font-size: 16px;
         display: block;
       
         gap: 0px;
-        position: relative;
+       
       
     }
     
@@ -838,7 +911,7 @@ font-size: 16px;
       margin: 10px;
       
         text-align: center;
-        width: 90%;
+        width: 95%;
         height: 200px;
         padding: 0px;
         padding-top: 10%;
@@ -873,7 +946,7 @@ font-size: 16px;
     
     .offer .innovation , .offer .collaboration , .offer .integrity{
         text-align: center;
-        width: 80%;
+        width: 95%;
         height: 200px;
         padding: 5px;
         padding-top: 3%;
@@ -897,11 +970,11 @@ font-size: 16px;
     }
     
     .layout{
-        margin-top: 20px;
-        margin-left: 10px;
+        margin-top: 50px;
+        margin-left: 0px;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+        grid-template-columns: repeat(2, 1fr); /* 4 columns per row */
         gap: 50px 10px; /* Add some spacing between the cards */
     }
     
@@ -909,5 +982,72 @@ font-size: 16px;
         text-decoration: none;
     }
     
+
+
+
+   
+    
+    .pro h1 {
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: 600;
+    color: #5369cc;
+    margin-left: 10px;
+    }
+     .pro .cards{
+        width: 180px;
+      
+         border-radius: 5px;
+         transition: 0.3s ease-in;
+    }
+    
+    .pro .cards:hover{
+          background-color: #fff;
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+    }
+    
+    .pro .top p{
+        margin-left: 10px;
+    font-size: 16px;
+    }
+    
+    .pro .card{
+        width: 100%;
+    }
+    
+    .pro .card img{
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    
+    .pro .dis{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    
+    
+    .dis .company-name{
+        margin-top: 3px;
+        color: #000;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    
+    
+    
+    .dis .discription{
+        color: #7a7374;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    
+       .dis hr{
+        margin-top: 5px;
+        border: 1px solid #f6f6f6;
+       }
 
    }
