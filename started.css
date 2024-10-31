@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+
+
+
+
+body{
+
+   
+    font-family: "Nunito", sans-serif;
+}
+
+
+
+
+.container{
+    display: flex;
+    width: 100%;
+    }
+
+.section1{
+    width: 20%; 
+     box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+     height: 100vh;
+     background-color: #fff;
+     /* padding: 10px; */
+     position: fixed;
+}
+
+
+
+
+/* header{
+    width: 100%;
+     position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 70px;
+    background-color: #5369cc;
+    display: flex;
+  
+   
+justify-content: space-between;
+
+} */
+
+.section1 .logo {
+    /* background-color: red; */
+    height: 100px;
+    
+}
+
+.section1 .logo img{
+    width: 150px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.logo hr{
+    margin-top: 10px;
+    border: 1px solid #f6f6f6;
+}
+nav hr{
+    margin-top: 80px;
+    border: 1px solid #f6f6f6;
+}
+
+.section1 nav ul{
+      margin-top: 70px;
+
+    
+}
+
+.section1 nav ul li{
+    list-style-type: none;
+    text-transform: capitalize;
+      position: relative; 
+
+}
+
+.section1 nav ul li a{
+    text-decoration: none;
+
+}
+
+.home , .about , .projects , .contact{
+    display: flex;
+      padding-left: 10px;
+     padding: 15px;
+   align-items: center;
+    gap: 10px;
+    transition: 0.3s ease-in;
+}
+
+.home:hover , .about:hover , .projects:hover , .contact:hover{
+    background-color: #5369cc1f;
+    border-left: 3px solid #5369cc;
+}
+
+.about , .projects , .contact{
+    margin-top: 5px;
+}
+
+.home p a , .about p a , .projects p a , .contact p a{ 
+margin-top: 5px;
+    font-weight: 600;
+    font-size: 16px;    
+    color: #7a7374;
+}
+
+.home span , .about span , .projects span , .contact span{
+    font-size: 20px;
+    cursor: pointer;
+    color: #5369cc;
+}
+
+
+
+
+
+/* 
+nav ul li div::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    width: 3px; 
+    background-color: #5369cc; 
+    transform: scaleY(0); 
+    transition: transform 0.3s ease; 
+    transform-origin: top; 
+}
+
+
+nav ul li div.active::before {
+    transform: scaleY(1); 
+} */
+
+
+.active{
+    background-color: #5369cc1f;
+
+    border-left: 3px solid #5369cc;
+}
+
+
+
+nav ul li div.active span,
+nav ul li div.active p a {
+    color: #5369cc;
+}
+
+
+
+
+
+/* Default styles */
+
+   
+
+
+
+
+.bottom{
+    margin-top: 50px;
+    padding-left: 15px;
+    color: #7a7374;
+}
+
+.bottom ul{
+    list-style-type: none;
+}
+
+
+
+.whatsapp , .call , .mail{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.whatsapp p , .call p , .mail p{
+    font-size: 14px;
+}
+
+.call , .mail{
+    margin-top: 15px;
+}
+
+ion-icon{
+    font-size: 16px;
+}
+
+.call span{
+    font-size: 16px;
+}
+
+.call p , .whatsapp p{
+    color: #5369cc;
+}
+
+.call p span , .whatsapp p span{
+    color: #7a7374;
+    font-size: 14px;
+}
+
+.button{
+ width: 18%;
+
+    position: fixed;
+    bottom: 10px;
+    left: 12px;
+  
+}
+
+.button button{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5369cc;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: 0.3s all;
+}
+
+.button button:hover{
+    cursor: pointer;
+  font-size: 18px   ;
+}
+
+.section2{
+    width: 80%;
+    height: 100vh;
+    margin-left: 20%;
+    padding: 20px;
+    position: relative;
+    scroll-behavior: smooth;
+overflow-x: hidden;
+}
+
+
+.logo-h1{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+h1{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.logo img{
+    width: 60px;
+    height: 70px;
+    
+}
+
+/* .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+.input-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 6%;
+}
+form{
+  
+     width: 80%;
+    height: max-content;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+}
+
+.name-phone , .email-select{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.email-select{
+    margin-top: 10px;
+}
+
+.name , .phone , .select , .email , .message{
+    width: 100%;
+}
+
+.select , .email , .message{
+    margin-top: 10px;
+}
+
+.name input , .phone input , .email input{
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.05);
+margin-top: 10px;
+    background-color: transparent;
+    font-family: "Nunito", sans-serif;
+    padding-left: 50px;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #7a7374;
+    text-transform: capitalize;
+}
+
+.select select{
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.05);
+margin-top: 10px;
+    background-color: transparent;
+    font-family: "Nunito", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #7a7374;
+    text-transform: capitalize;
+}
+
+textarea{
+    width: 50%;
+   padding-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.05);
+margin-top: 10px;
+    background-color: transparent;
+    font-family: "Nunito", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #7a7374;
+}
+
+
+label{
+    text-transform: capitalize;
+    color: #5369cc;
+    font-weight: 600;
+}
+
+input:focus , textarea:focus , select:focus{
+    outline-color: #5369cc;
+}
+
+.submit{
+    width: 100%;
+ 
+    margin-top: 50px;
+}
+
+.submit button {
+    width: 30%;
+    height: 60px;
+    background-color: #5369cc;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    position: relative;
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+ 
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: #5369cc;
+    animation: spin 0.6s linear infinite; /* Spins smoothly */
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    transform: translate(-50%, -50%); /* Center the loader */
+   display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    100% {
+        transform: rotate(360deg); /* Complete a full circle */
+    }
+}
+
+
+/* Align the input and icon */
+.input-icon {
+    position: relative;
+    display: flex;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 10px; /* Adjust for spacing */
+    top: 55%;
+    transform: translateY(-50%);
+    color: #888; /* Icon color */
+}
+
+.input-icon input {
+    padding-left: 35px; /* Adjust padding to fit icon */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+@media screen  and (max-width:769px){
+    .section1{
+       display: none;
+    }
+    
+       
+    .section2{
+        width: 100%;
+        height: 100vh;
+        margin-left: 00%;
+        padding: 10px;
+        position: relative;
+        scroll-behavior: smooth;
+    overflow-x: hidden;
+    }
+    
+    
+    .logo-h1{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    h1{
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    
+    .logo img{
+        width: 60px;
+        height: 70px;
+        
+    }
+    
+    /* .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    } */
+    
+    .input-box{
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      padding-top: 6%;
+    }
+    form{
+      
+         width: 100%;
+        height: max-content;
+        padding: 0px;
+        background-color: #fff;
+        box-shadow: none;
+        border-radius: 5px;
+    }
+    
+    .name-phone , .email-select{
+        display: block;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .email-select{
+        margin-top: 10px;
+    }
+    
+    .name , .phone , .select , .email , .message{
+        width: 100%;
+    }
+    
+    .select , .email , .message{
+        margin-top: 10px;
+    }
+    
+    .name input , .phone input , .email input{
+        width: 100%;
+        height: 55px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+        background-color: transparent;
+        font-family: "Nunito", sans-serif;
+        padding-left: 50px;
+        padding-right: 20px;
+        font-size: 16px;
+        color: #7a7374;
+        text-transform: capitalize;
+    }
+    
+    .select select{
+        width: 100%;
+        height: 55px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+        background-color: transparent;
+        font-family: "Nunito", sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+        color: #7a7374;
+        text-transform: capitalize;
+    }
+    
+    textarea{
+        width: 100%;
+       padding-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+        background-color: transparent;
+        font-family: "Nunito", sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+        color: #7a7374;
+    }
+    
+    
+    label{
+        text-transform: capitalize;
+        color: #5369cc;
+        font-weight: 600;
+    }
+    
+    input:focus , textarea:focus , select:focus{
+        outline-color: #5369cc;
+    }
+    
+    .submit{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        margin-top: 0px;
+    
+
+       }
+    
+    .submit button { 
+        position: fixed;
+     bottom: 10px;
+        width: 90%;
+        height: 60px;
+        background-color: #5369cc;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 18px;
+      
+    }
+    
+    .loader {
+        width: 20px;
+        height: 20px;
+     
+        border: 3px solid #fff;
+        border-radius: 50%;
+        border-top-color: #5369cc;
+        animation: spin 0.6s linear infinite; /* Spins smoothly */
+        position: absolute;
+        top: 35%;
+        left: 45%;
+        transform: translate(-50%, -50%); /* Center the loader */
+       display: none;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg); /* Start at 0 degrees */
+        }
+        100% {
+            transform: rotate(360deg); /* Complete a full circle */
+        }
+    }
+    
+    
+    /* Align the input and icon */
+    .input-icon {
+        position: relative;
+        display: flex;
+    }
+    
+    .input-icon i {
+        position: absolute;
+        left: 10px; /* Adjust for spacing */
+        top: 55%;
+        transform: translateY(-50%);
+        color: #888; /* Icon color */
+    }
+    
+    .input-icon input {
+        padding-left: 35px; /* Adjust padding to fit icon */
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

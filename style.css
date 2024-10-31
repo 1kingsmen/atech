@@ -1,0 +1,913 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+ }  
+
+ body{
+    scroll-behavior: smooth;
+ }
+
+
+
+.container{
+    display: flex;
+    width: 100%;
+    }
+
+.section1{
+    width: 20%; 
+     box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+     height: 100vh;
+     background-color: #fff;
+     /* padding: 10px; */
+     position: fixed;
+}
+
+
+
+
+/* header{
+    width: 100%;
+     position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 70px;
+    background-color: #5369cc;
+    display: flex;
+  
+   
+justify-content: space-between;
+
+} */
+
+.section1 .logo {
+    /* background-color: red; */
+    height: 100px;
+    
+}
+
+.section1 .logo img{
+    width: 150px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.logo hr{
+    margin-top: 10px;
+    border: 1px solid #f6f6f6;
+}
+nav hr{
+    margin-top: 80px;
+    border: 1px solid #f6f6f6;
+}
+
+.section1 nav ul{
+      margin-top: 70px;
+
+    
+}
+
+.section1 nav ul li{
+    list-style-type: none;
+    text-transform: capitalize;
+      position: relative; 
+
+}
+
+.section1 nav ul li a{
+    text-decoration: none;
+
+}
+
+.home , .about , .projects , .contact{
+    display: flex;
+      padding-left: 10px;
+     padding: 15px;
+   align-items: center;
+    gap: 10px;
+    transition: 0.3s ease-in;
+}
+
+.home:hover , .about:hover , .projects:hover , .contact:hover{
+    background-color: #5369cc1f;
+    border-left: 3px solid #5369cc;
+}
+
+.about , .projects , .contact{
+    margin-top: 5px;
+}
+
+.home p a , .about p a , .projects p a , .contact p a{ 
+margin-top: 5px;
+    font-weight: 600;
+    font-size: 16px;    
+    color: #7a7374;
+}
+
+.home span , .about span , .projects span , .contact span{
+    font-size: 20px;
+    cursor: pointer;
+    color: #5369cc;
+}
+
+
+
+
+
+/* 
+nav ul li div::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    width: 3px; 
+    background-color: #5369cc; 
+    transform: scaleY(0); 
+    transition: transform 0.3s ease; 
+    transform-origin: top; 
+}
+
+
+nav ul li div.active::before {
+    transform: scaleY(1); 
+} */
+
+
+.active{
+    background-color: #5369cc1f;
+
+    border-left: 3px solid #5369cc;
+}
+
+
+
+nav ul li div.active span,
+nav ul li div.active p a {
+    color: #5369cc;
+}
+
+
+
+
+
+/* Default styles */
+
+   
+
+
+
+
+.bottom{
+    margin-top: 50px;
+    padding-left: 15px;
+    color: #7a7374;
+}
+
+.bottom ul{
+    list-style-type: none;
+}
+
+
+
+.whatsapp , .call , .mail{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.whatsapp p , .call p , .mail p{
+    font-size: 14px;
+}
+
+.call , .mail{
+    margin-top: 15px;
+}
+
+ion-icon{
+    font-size: 16px;
+}
+
+.call span{
+    font-size: 16px;
+}
+
+.call p , .whatsapp p{
+    color: #5369cc;
+}
+
+.call p span , .whatsapp p span{
+    color: #7a7374;
+    font-size: 14px;
+}
+
+.button{
+ width: 18%;
+
+    position: fixed;
+    bottom: 10px;
+    left: 12px;
+  
+}
+
+.button button{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5369cc;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: 0.3s all;
+}
+
+.button button:hover{
+    cursor: pointer;
+  font-size: 18px   ;
+}
+
+.section2{
+    width: 80%;
+    height: 100vh;
+    margin-left: 20%;
+    padding: 20px;
+    position: relative;
+    scroll-behavior: smooth;
+overflow-x: hidden;
+}
+
+.section2 .hom  h1{
+    color: #5369cc;
+    margin-top: 10%;
+    font-size: 28px;
+}
+
+.section2  .top  p{    
+    margin-top: 10px;
+    font-size: 16px;
+    width: 50%;
+    line-height: 25px;
+    color: #7a7374;
+    
+}
+
+.section2 .hom .top h1 span{
+    font-family: "ADLaM Display", system-ui;
+    font-weight: 400;
+  font-size: 34px;
+}
+
+.abou .top  p{
+    font-size: 18px;
+  }
+
+  .abou .top h1{
+    color: #5369cc;
+    margin-top: 10%;
+    font-size: 28px;
+    text-transform: capitalize;
+  }
+
+.hom{
+    position: relative;
+}
+
+.hom{
+  
+    height: 500px;
+}
+
+.abou{
+    height: max-content;
+    padding: 10px;
+}
+
+.cta{
+    display: flex;
+    gap: 10px;
+}
+
+.started , .view{
+    margin-top: 20px;
+}
+
+.started button{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5369cc;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.started button a , .view button a{
+    text-decoration: none;
+
+}
+
+.view button{
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f6f6f6;
+font-weight: 600;
+    color: #5369cc;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: 0.3s all;
+}.view button a{
+    color: #5369cc;
+}
+
+.view button:hover{
+    background-color: #5369cc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.started button a{
+    color: #fff;
+}
+
+
+
+.view button a:hover{
+    color: #fff;
+}
+
+
+.metrics{
+    display: flex;
+    margin-top: 120px;
+    gap: 15px;
+    color: #7a7374;
+    font-weight: 600;
+  
+}
+
+.metrics .num{
+    font-size: 35px;
+    color: #5369cc;
+    font-family: "ADLaM Display", system-ui;
+}
+
+.work, .satisfied{
+    padding-left: 20px;
+    border-left: 1px solid #5369cc;
+   
+}
+
+.phone-ill{
+    display: none;
+}
+
+.clients , .work , .satisfied{
+    text-align: center;
+  }
+  
+.blob-about , .blob{
+    position: relative;
+    bottom:  350px;  
+    right: -800px; 
+}
+
+.blob-about img , .blob img{
+    position: absolute;
+    height: 600px;
+    width: 600px;
+}
+
+
+.illustration img{
+   width: 600px;
+   height: 600px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+
+}
+
+
+.illustration1 img{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    right: 65%;
+    /* top:  105%; */
+}
+
+
+.illustration2 img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top:  90%;
+}
+
+
+.core{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.core h1 , .offer h1{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: end;
+}
+
+.offer h1{
+    text-align: start;
+}
+
+.core .cards{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    position: relative;
+    z-index: 999; /* Keep these in front */
+}
+
+.offer{
+    margin-top: 150px;
+}
+
+.offer .cards{
+    margin-top: 20px;
+    display: flex;
+  
+    gap: 20px;
+    position: relative;
+  
+}
+
+
+
+.innovation, .collaboration, .integrity {
+  
+  
+    text-align: center;
+    width: 220px;
+    height: 180px;
+    padding: 5px;
+    padding-top: 3%;
+    border-radius: 5px;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+    transition: 0.3s all;
+}
+
+
+
+
+.innovation h2 , .collaboration h2 , .integrity h2{
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 18px;
+   font-weight: 500;
+}
+
+.innovation p , .collaboration p , .integrity p{
+font-size: 15px;
+margin-top: 10px;
+
+}
+
+.innovation:hover, .collaboration:hover, .integrity:hover{
+    background-color: #5369cc;
+    color: #fff;
+    cursor: pointer;
+    margin-top: -5px;
+    }
+
+
+.offer .innovation , .offer .collaboration , .offer .integrity{
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    padding: 5px;
+    padding-top: 3%;
+    border-radius: 5px;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+    transition: 0.3s all;
+}
+
+.offer .innovation h2 , .offer .collaboration h2 , .offer .integrity h2{
+    margin-top: 18px;
+    font-weight: 500;
+}
+
+.offer .innovation p , .offer .collaboration p , .offer .integrity p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.pro{
+    margin-top: 100px;
+}
+
+.layout{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+    gap: 50px 10px; /* Add some spacing between the cards */
+}
+
+a{
+    text-decoration: none;
+}
+
+.pro .cards{
+    width: 280px;
+  
+     border-radius: 5px;
+     transition: 0.3s ease-in;
+}
+
+.pro .cards:hover{
+      background-color: #fff;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pro h1 {
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 600;
+color: #5369cc;
+margin-left: 10px;
+}
+
+
+.pro .top p{
+    margin-left: 10px;
+font-size: 16px;
+}
+
+.pro .card{
+    width: 100%;
+}
+
+.pro .card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.pro .dis{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+.dis .company-name{
+    margin-top: 3px;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+
+.dis .discription{
+    color: #7a7374;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+   .dis hr{
+    margin-top: 5px;
+    border: 1px solid #f6f6f6;
+   }
+
+
+
+   @media screen and (max-width:769px) {
+    .section1{
+        display: none;
+    }
+
+
+    
+
+    .section2{
+        width: 100%;
+        height: 100vh;
+        margin-left: 0%;
+        padding: 10px;
+        position: relative;
+        scroll-behavior: smooth;
+    overflow-x: hidden;
+    }
+    
+    .section2 .hom  h1{
+        color: #5369cc;
+        /* margin-top: 10%; */
+        font-size: 28px;
+    }
+    
+    .section2  .top  p{    
+        margin-top: 10px;
+        font-size: 16px;
+        width: 100%;
+        line-height: 25px;
+        color: #7a7374;
+        
+    }
+
+    .phone-ill {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .phone-ill img{
+          width: 300px;
+        height: 300px;
+      
+      
+    }
+
+.illustration{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+   
+
+     .blob-about , .blob{
+        position: relative;
+        bottom:  300px;  
+        right: -100px; 
+        opacity: 0.8;
+    }
+    
+    .blob-about img , .blob img{
+        position: absolute;
+        height: 500px;
+        width: 500px;
+    }
+    
+    
+    .section2 .hom .top h1 span{
+        font-family: "ADLaM Display", system-ui;
+        font-weight: 400;
+      font-size: 34px;
+    }
+    
+    .abou .top  p{
+        font-size: 18px;
+      }
+    
+      .abou .top h1{
+        color: #5369cc;
+        margin-top: 10%;
+        font-size: 28px;
+        text-transform: capitalize;
+      }
+    
+   
+    
+    
+    .abou{
+        height: max-content;
+        padding: 0px;
+    }
+    
+    .cta{
+        display: flex;
+        gap: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .started , .view{
+        margin-top: 50px;
+    }
+    
+    .started button{
+        width: 180px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        background-color: #5369cc;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 16px;
+        transition: 0.3s all;
+        cursor: pointer;
+    }
+    
+    .view button{
+        width: 180px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        background-color: #f6f6f6;
+    font-weight: 600;
+        color: #5369cc;
+        text-transform: capitalize;
+        font-size: 16px;
+        transition: 0.3s all;
+    }
+    
+    .view button:hover{
+        background-color: #5369cc;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    
+    .metrics{
+        display: flex;
+        margin-top: 120px;
+        gap: 15px;
+        color: #7a7374;
+        font-weight: 600;
+      display: none;
+    }
+    
+    .metrics .num{
+        font-size: 35px;
+        color: #5369cc;
+        font-family: "ADLaM Display", system-ui;
+    }
+    
+    .work, .satisfied{
+        padding-left: 20px;
+        border-left: 1px solid #5369cc;
+       
+    }
+    
+    .clients , .work , .satisfied{
+        text-align: center;
+      }
+      
+   
+    
+   
+    
+    
+    .illustration1 img{
+        width: 450px;
+        height: 450px;
+        position: absolute;
+        right: 65%;
+        /* top:  105%; */
+        display: none;
+    }
+    
+    
+    .illustration2 img{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        right: 0;
+        top:  90%;
+        display: none;
+    }
+    
+
+
+    .core{
+        margin-top: 50px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    
+    .core h1 , .offer h1{
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    
+    
+    .core .cards{
+        width: 100%;
+        margin-top: 20px;
+        display: block;
+     
+        gap: 20px;
+     
+    }
+    
+    .offer{
+        margin-top: 50px;
+    }
+    
+    .offer .cards{
+        margin-top: 0px;
+        display: block;
+      
+        gap: 0px;
+        position: relative;
+      
+    }
+    
+    
+    
+    .innovation, .collaboration, .integrity {
+      margin: 10px;
+      
+        text-align: center;
+        width: 90%;
+        height: 200px;
+        padding: 0px;
+        padding-top: 10%;
+        border-radius: 5px;
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+        transition: 0.3s all;
+    }
+    
+    
+    
+    
+    .innovation h2 , .collaboration h2 , .integrity h2{
+        text-transform: capitalize;
+        margin-top: 10px;
+        font-size: 18px;
+       font-weight: 500;
+    }
+    
+    .innovation p , .collaboration p , .integrity p{
+    font-size: 15px;
+    margin-top: 10px;
+    
+    }
+    
+    .innovation:hover, .collaboration:hover, .integrity:hover{
+        background-color: #5369cc;
+        color: #fff;
+        cursor: pointer;
+        margin-top: -5px;
+        }
+    
+    
+    .offer .innovation , .offer .collaboration , .offer .integrity{
+        text-align: center;
+        width: 80%;
+        height: 200px;
+        padding: 5px;
+        padding-top: 3%;
+        border-radius: 5px;
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+        transition: 0.3s all;
+    }
+    
+    .offer .innovation h2 , .offer .collaboration h2 , .offer .integrity h2{
+        margin-top: 18px;
+        font-weight: 500;
+    }
+    
+    .offer .innovation p , .offer .collaboration p , .offer .integrity p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
+    .pro{
+        margin-top: 100px;
+    }
+    
+    .layout{
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+        gap: 50px 10px; /* Add some spacing between the cards */
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+
+   }
