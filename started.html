@@ -305,6 +305,14 @@
 <!-- <script src="script.js"></script> -->
 <script>
  // Variables to track the current section
+ function closepreloader(){
+            document.getElementById("preloader").style.display = 'none';
+        }
+        window.addEventListener("load",function(){
+            setTimeout(closepreloader, 2000);
+            
+        });
+
 let currentSection = 0;
 const sections = document.querySelectorAll('.box');
 
