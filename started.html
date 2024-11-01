@@ -17,6 +17,30 @@
     </script>
 
     <title>Document</title>
+    <style>
+        .box {
+            display: none; /* Initially hide all sections */
+        }
+
+        /* Spinner animation */
+#submit-button .spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #ffffff;
+    animation: spin 1s ease infinite;
+    margin-right: 8px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+    </style>
 </head>
 <body>
     <div id="preloader">
@@ -113,150 +137,238 @@
                         <img src="images/a-tech-high-resolution-logo-transparent.png" alt="">
                     </div> -->
                 </div>
-            <div class="input-box">
+           
 
             
                
             
                 <form id="contact-form">
-                    <div class="name-phone">
-                        <div class="name">
-                            <label for="name">Full Name</label><br>
-                            <div class="input-icon">
-                                <i class="material-icons">person</i>
-                                <input type="text" id="name" name="name">
-                            </div>
-                        </div>
-                        <div class="phone">
-                            <label for="phone">Phone</label><br>
-                            <div class="input-icon">
-                                <i class="material-icons">phone</i>
-                                <input type="number" id="phone" name="phone">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="email-select">
-                        <div class="email">
-                            <label for="email">Email</label><br>
-                            <div class="input-icon">
-                                <i class="material-icons">email</i>
-                                <input type="email" id="email" name="email">
-                            </div>
-                        </div>
                    
-                    
-                    
-                    
-                    <div class="select">
-                        <label for="business">business type</label><br>
-                        <select id="business" name="business">
-        
-                            <option value="consulting-services">Consulting Services</option>
-<option value="coaching">Coaching (Life, Fitness, Business)</option>
-<option value="therapists-counselors">Therapists and Counselors</option>
-<option value="cleaning-services">Cleaning Services</option>
-<option value="pet-grooming-boarding">Pet Grooming and Boarding</option>
-<option value="handyman-repair">Handyman and Repair Services</option>
-<option value="home-renovation">Home Renovation and Remodeling</option>
-<option value="landscaping-gardening">Landscaping and Gardening</option>
-<option value="photography-videography">Photography and Videography</option>
-<option value="tutoring-educational">Tutoring and Educational Services</option>
-<option value="freelance-writers-designers">Freelance Writers and Designers</option>
-<option value="event-planning">Event Planning</option>
-<option value="real-estate">Real Estate Agents and Brokers</option>
-<option value="accounting-bookkeeping">Accounting and Bookkeeping</option>
-<option value="marketing-agency">Marketing and Advertising Agencies</option>
-<option value="it-support">IT Support and Consulting</option>
-<option value="interior-design">Interior Design</option>
-<option value="health-fitness">Health and Fitness (Gyms, Trainers)</option>
-<option value="e-commerce-store">E-commerce Store</option>
-<option value="restaurant-cafe">Restaurants and Cafes</option>
-<option value="non-profit">Non-Profit Organization</option>
-<option value="law-firm">Law Firms</option>
-<option value="medical-practice">Medical Practices</option>
-<option value="spa-salon">Spas and Salons</option>
-<option value="travel-agency">Travel Agency</option>
-<option value="car-rental">Car Rental</option>
-<option value="repair-services">Appliance and Car Repair</option>
-<option value="blog">Blog/Personal Brand</option>
-<option value="news-media">News and Media</option>
-<option value="arts-crafts">Arts and Crafts</option>
 
-                        </select>
-                    </div>
-                    </div>
-                   
-                    <div class="message">
-                        <label for="message">message</label><br>
-                        <textarea rows="5" id="message" name="message"></textarea>
-                        <div class="submit">
-                            <button type="submit" id="submit-button">
-                                Submit
-                                <div class="loader"></div>
-                            </button>
+
+
+            <div class="input-box">
+                <div class="box" id="name-box">
+                    <div class="name">
+                        <div class="icon">
+                            <span class="material-symbols-outlined">person</span>
                         </div>
-                        
-                </form>
+                        <p>name</p>
+                        <input type="text" id="name" name="name" placeholder="full name">
+                        <div class="next">
+                            <button onclick="nextSection()">next</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box" id="phone-box">
+                    <div class="phone">
+                        <div class="icon">
+                            <span class="material-symbols-outlined">call</span>
+                        </div>
+                        <p>phone</p>
+                        <input type="number" id="phone" name="phone" placeholder="phone number">
+                        <div class="next">
+                            <button onclick="prevSection()">back</button>
+                            <button onclick="nextSection()">next</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box" id="email-box">
+                    <div class="email">
+                        <div class="icon">
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <p>email</p>
+                        <input type="email" id="email" name="email" placeholder="email">
+                        <div class="next">
+                            <button onclick="prevSection()">back</button>
+                            <button onclick="nextSection()">next</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box" id="select-box">
+                    <div class="select">
+                        <div class="icon">
+                            <span class="material-symbols-outlined">work</span>
+                        </div>
+                        <p>select</p>
+                        <select id="business" name="business">
+                            <option value="consulting-services">Consulting Services</option>
+                            <option value="consulting-services">Consulting Services</option>
+                            <option value="coaching">Coaching (Life, Fitness, Business)</option>
+                            <option value="therapists-counselors">Therapists and Counselors</option>
+                            <option value="cleaning-services">Cleaning Services</option>
+                            <option value="pet-grooming-boarding">Pet Grooming and Boarding</option>
+                            <option value="handyman-repair">Handyman and Repair Services</option>
+                            <option value="home-renovation">Home Renovation and Remodeling</option>
+                            <option value="landscaping-gardening">Landscaping and Gardening</option>
+                            <option value="photography-videography">Photography and Videography</option>
+                            <option value="tutoring-educational">Tutoring and Educational Services</option>
+                            <option value="freelance-writers-designers">Freelance Writers and Designers</option>
+                            <option value="event-planning">Event Planning</option>
+                            <option value="real-estate">Real Estate Agents and Brokers</option>
+                            <option value="accounting-bookkeeping">Accounting and Bookkeeping</option>
+                            <option value="marketing-agency">Marketing and Advertising Agencies</option>
+                            <option value="it-support">IT Support and Consulting</option>
+                            <option value="interior-design">Interior Design</option>
+                            <option value="health-fitness">Health and Fitness (Gyms, Trainers)</option>
+                            <option value="e-commerce-store">E-commerce Store</option>
+                            <option value="restaurant-cafe">Restaurants and Cafes</option>
+                            <option value="non-profit">Non-Profit Organization</option>
+                            <option value="law-firm">Law Firms</option>
+                            <option value="medical-practice">Medical Practices</option>
+                            <option value="spa-salon">Spas and Salons</option>
+                            <option value="travel-agency">Travel Agency</option>
+                            <option value="car-rental">Car Rental</option>
+                            <option value="repair-services">Appliance and Car Repair</option>
+                            <option value="blog">Blog/Personal Brand</option>
+                            <option value="news-media">News and Media</option>
+                            <option value="arts-crafts">Arts and Crafts</option>
+                            <option value="others">others</option>
+                        </select>
+                        <div class="next">
+                            <button onclick="prevSection()">back</button>
+                            <button onclick="nextSection()">next</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="box" id="message-box">
+                    <div class="message">
+                        <div class="icon">
+                            <span class="material-symbols-outlined">chat</span>
+                        </div>
+                        <p>message</p>
+                        <textarea  id="message" name="message" placeholder="your message"></textarea>
+                       
+                            <div class="next">
+                                <button onclick="prevSection()">back</button>
+                                <button type="submit" id="submit-button">Submit</button>
+                            </div>
+                            
+            
+                    </div>
+                </div>
             </div>
+            
+                </form>
+            
+           
+            
 
         </div>
     </div>
+
+    <div class="navigation">
+        <ul>
+            <li>
+                <div class="home">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                    <p><a href="home.html">Home</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="about">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <p><a href="about.html">About</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="projects">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <p><a href="project.html">Projects</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="contact">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+<!-- <script src="script.js"></script> -->
 <script>
-    function closepreloader(){
-            document.getElementById("preloader").style.display = 'none';
-        }
-        window.addEventListener("load",function(){
-            setTimeout(closepreloader, 2000);
-            
-        });
- </script>
+ // Variables to track the current section
+let currentSection = 0;
+const sections = document.querySelectorAll('.box');
 
+// Function to show the current section
+function showSection(index) {
+    sections.forEach((section, i) => {
+        section.style.display = i === index ? 'block' : 'none';
+    });
+}
 
+// Initialize the first section
+showSection(currentSection);
 
-<script>
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+// Next and Previous Section Functions
+function nextSection() {
+    if (currentSection < sections.length - 1) {
+        currentSection++;
+        showSection(currentSection);
+    }
+}
 
+function prevSection() {
+    if (currentSection > 0) {
+        currentSection--;
+        showSection(currentSection);
+    }
+}
+
+// Form submission logic
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Check if the submit button was clicked
     const submitButton = document.getElementById('submit-button');
-    const loader = submitButton.querySelector('.loader');
+    if (event.submitter && event.submitter.id === 'submit-button') {
+        // Show loader
+        submitButton.innerHTML = '<span class="spinner"></span> Submitting...';
+        submitButton.disabled = true; // Disable the button
 
-    // Show loader and disable the button
-    submitButton.disabled = true;
-    loader.style.display = "inline-block";
-    submitButton.style.color = "transparent"; // Hide button text
+        // Collect form data
+        let formData = {
+            name: document.getElementById('name').value,
+            phone: document.getElementById('phone').value,
+            email: document.getElementById('email').value,
+            business: document.getElementById('business').value,
+            message: document.getElementById('message').value
+        };
 
-    // Collect form data
-    let formData = {
-        name: document.getElementById('name').value,
-        phone: document.getElementById('phone').value,
-        email: document.getElementById('email').value,
-        business: document.getElementById('business').value,
-        message: document.getElementById('message').value
-    };
-
-    // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_PUBLIC_KEY'
-    emailjs.send('service_tb0q0an', 'template_0lqkpor', formData)
-        .then(function(response) {
- 
-            console.log("SUCCESS!", response.status, response.text);
-            window.location.href = "sucess.html"; // Redirect on success
-        }, function(error) {
-            alert("Failed to send message. Please try again.");
-            console.log("FAILED...", error);
-        })
-        .finally(function() {
-            // Hide loader and re-enable the button after the submission
-            submitButton.disabled = false;
-            loader.style.display = "none";
-            submitButton.style.color = "#fff"; // Show button text
-        });
+        // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with actual IDs from your EmailJS account
+        emailjs.send('service_tb0q0an', 'template_0lqkpor', formData)
+            .then(function(response) {
+                console.log("SUCCESS!", response.status, response.text);
+                window.location.href = "sucess.html"; // Redirect on success
+            }, function(error) {
+                alert("Failed to send message. Please try again.");
+                console.log("FAILED...", error);
+            })
+            .finally(function() {
+                // Reset button text and re-enable button
+                submitButton.innerHTML = 'Submit';
+                submitButton.disabled = false;
+            });
+    }
 });
-
-
 </script>
 </html>
    
