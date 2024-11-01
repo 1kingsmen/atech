@@ -14,7 +14,8 @@
 <body>
    
 
-
+    <div id="preloader">
+    </div>
 
 
 
@@ -83,7 +84,7 @@
         </li>
             <div class="mail">
             <ion-icon name="mail-outline"></ion-icon>
-            <p>autaayenajeyi@gmail.com</p> 
+            <p>atech5705gmail.com</p> 
         </div>
         </li>
         
@@ -128,9 +129,6 @@
     </div>
     </a>
 
-
-
-    
 
     
 </section>
@@ -195,5 +193,15 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+<script>
+    function closepreloader(){
+            document.getElementById("preloader").style.display = 'none';
+        }
+        window.addEventListener("load",function(){
+            setTimeout(closepreloader, 2000);
+            
+        });
+ </script>
+
 <script src="script.js"></script>
 </html>

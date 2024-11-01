@@ -12,7 +12,8 @@
     <title>Document</title>
 </head>
 <body>
-   
+    <div id="preloader">
+    </div>
 
 
 
@@ -83,7 +84,7 @@
         </li>
             <div class="mail">
             <ion-icon name="mail-outline"></ion-icon>
-            <p>autaayenajeyi@gmail.com</p> 
+            <p>atech5705@gmail.com</p> 
         </div>
         </li>
         
@@ -114,15 +115,22 @@
    </div>
    
     </div>
+
+
+
+    <div class="phone-but">
+        <button><a href="started.html">get started</a></button>
+    </div>
    
     
   <div class="cta">
-    <div class="started">
-        <button><a href="started.html">get started</a></button>
-        </div>
-        <div class="view">
-            <button><a href="project.html">view projects</a></button>
-        </div>
+    <div class="start">
+        <a href="started.html" class="button-link">Get Started</a>
+    </div>
+    
+  <div class="view">
+    <button><a href="project.html">view projects</a></button>
+  </div>
   </div>
 
   <div class="metrics">
@@ -211,7 +219,7 @@
                     <span class="material-symbols-outlined">
                         call
                     </span>
-                    <p><a href="started.html">Contact</a></p>
+                    <p><a href="contact.html">Contact</a></p>
                 </div>
             </li>
         </ul>
@@ -221,5 +229,15 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+<script>
+    function closepreloader(){
+            document.getElementById("preloader").style.display = 'none';
+        }
+        window.addEventListener("load",function(){
+            setTimeout(closepreloader, 2000);
+            
+        });
+ </script>
+
 <script src="script.js"></script>
 </html>
