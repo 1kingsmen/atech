@@ -225,14 +225,16 @@ ion-icon{
 .button{
  width: 18%;
 
-    position: fixed;
-    bottom: 10px;
-    left: 12px;
+  
+ 
   
 }
 
-.button button{
-    width: 100%;
+.button button{  
+      left: 12px;
+     position: fixed;
+    bottom: 10px;
+    width: 18%;
     height: 50px;
     border-radius: 5px;
     border: none;
@@ -1172,4 +1174,612 @@ ion-icon{
         font-size: 16px;
     }
 
+   }
+
+  @media only screen and (min-width: 769px) and (max-width: 1300px) {
+    .container{
+        display: flex;
+        width: 100%;
+        }
+    
+    .section1{
+        width: 25%; 
+         box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+         height: 100vh;
+         background-color: #fff;
+         /* padding: 10px; */
+         position: fixed;
+        
+    }
+    
+        .section1 .logo {
+        /* background-color: red; */
+        height: 100px;
+        
+    }
+    
+    .section1 .logo img{
+        width: 150px;
+        height: 60px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    
+    .logo hr{
+        margin-top: 10px;
+        border: 1px solid #f6f6f6;
+    }
+    nav hr{
+        margin-top: 80px;
+        border: 1px solid #f6f6f6;
+    }
+    
+    .section1 nav ul{
+          margin-top: 50px;
+    
+        
+    }
+    
+    .section1 nav ul li{
+        list-style-type: none;
+        text-transform: capitalize;
+          position: relative; 
+    
+    }
+    
+    .section1 nav ul li a{
+        text-decoration: none;
+    
+    }
+    
+    .home , .about , .projects , .contact{
+        display: flex;
+          padding-left: 10px;
+         padding: 15px;
+       align-items: center;
+        gap: 10px;
+        transition: 0.3s ease-in;
+    }
+    
+    .home:hover , .about:hover , .projects:hover , .contact:hover{
+        background-color: #5369cc1f;
+        border-left: 3px solid #5369cc;
+    }
+    
+    .about , .projects , .contact{
+        margin-top: 5px;
+    }
+    
+    .home p a , .about p a , .projects p a , .contact p a{ 
+    margin-top: 5px;
+        font-weight: 600;
+        font-size: 16px;    
+        color: #7a7374;
+    }
+    
+    .home span , .about span , .projects span , .contact span{
+        font-size: 20px;
+        cursor: pointer;
+        color: #5369cc;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .active{
+        background-color: #5369cc1f;
+    
+        border-left: 3px solid #5369cc;
+    }
+    
+    
+    
+    nav ul li div.active span,
+    nav ul li div.active p a {
+        color: #5369cc;
+    }
+    
+    .bottom{
+        margin-top: 50px;
+        padding-left: 15px;
+        color: #7a7374;
+    }
+    
+    .bottom ul{
+        list-style-type: none;
+    }
+    
+    
+    
+    .whatsapp , .call , .mail{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        
+    }
+    
+    .whatsapp p , .call p , .mail p{
+        font-size: 14px;
+    }
+    
+    .call , .mail{
+        margin-top: 15px;
+    }
+    
+    ion-icon{
+        font-size: 16px;
+    }
+    
+    .call span{
+        font-size: 16px;
+    }
+    
+    .call p , .whatsapp p{
+        color: #5369cc;
+    }
+    
+    .call p span , .whatsapp p span{
+        color: #7a7374;
+        font-size: 14px;
+    }
+    
+    .button{
+     width: 100%;
+    
+      
+       
+      
+    }
+    
+    .button button{  
+        position: fixed; 
+        left: 10px;
+        bottom: 10px;
+        width: 23%;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        background-color: #5369cc;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 16px;
+        transition: 0.3s all;
+    }
+    
+    .button button:hover{
+        cursor: pointer;
+      font-size: 18px   ;
+    }
+    
+    .section2{
+        width: 85%;
+        height: 100vh;
+        margin-left: 25%;
+        padding: 20px;
+        position: relative;
+        scroll-behavior: smooth;
+    overflow-x: hidden;
+    }
+    
+    .section2 .hom  h1{
+        color: #5369cc;
+        margin-top: 10%;
+        font-size: 28px;
+    }
+    
+    .section2  .top  p{    
+        margin-top: 10px;
+        font-size: 16px;
+        width: 50%;
+        line-height: 25px;
+        color: #7a7374;
+        
+    }
+    
+    .section2 .hom .top h1 span{
+        font-family: "ADLaM Display", system-ui;
+        font-weight: 400;
+      font-size: 34px;
+    }
+    
+    .abou .top  p{
+        font-size: 18px;
+      }
+    
+      .abou .top h1{
+        color: #5369cc;
+        margin-top: 5%;
+        font-size: 28px;
+        text-transform: capitalize;
+      }
+    
+    .hom{
+        position: relative;
+    }
+    
+    .hom{
+      
+        height: 500px;
+    }
+    
+    .abou{
+        height: max-content;
+        padding: 10px;
+    }
+    
+    .cta{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .start , .view{
+        margin-top: 20px;
+    }
+    
+     .button-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #5369cc;
+        font-size: 18px;
+        text-transform: capitalize;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s all;
+        cursor: pointer;
+    }
+    
+    .button-link:hover {
+        background-color: #4052a3; /* Add a hover effect if you like */
+    }
+    
+    
+    
+    .view button{
+        width: 180px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        background-color: #f6f6f6;
+    font-weight: 600;
+        color: #5369cc;
+        text-transform: capitalize;
+        font-size: 16px;
+        transition: 0.3s all;
+    }.view button a{
+        color: #5369cc;
+    }
+    
+    .view button:hover{
+        background-color: #5369cc;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    
+    
+    .phone-but{
+        display: none;
+    }
+    
+    
+    .metrics{
+        display: flex;
+        margin-top: 120px;
+        gap: 15px;
+        color: #7a7374;
+        font-weight: 600;
+      
+    }
+    
+    .metrics .num{
+        font-size: 35px;
+        color: #5369cc;
+        font-family: "ADLaM Display", system-ui;
+    }
+    
+    .work, .satisfied{
+        padding-left: 20px;
+        border-left: 1px solid #5369cc;
+       
+    }
+    
+    .phone-ill{
+        display: none;
+    }
+    
+    .clients , .work , .satisfied{
+        text-align: center;
+      }
+      
+    .blob-about , .blob{
+        position: relative;
+        bottom:  350px;  
+        right: -600px; 
+    }
+    
+    .blob-about img , .blob img{
+        position: absolute;
+        height: 600px;
+        width: 600px;
+    }
+    
+    
+    .illustration img{
+       width: 450px;
+       height: 450px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+    
+    }
+    
+    
+    .illustration1 img{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        right: 70%;
+        /* top:  105%; */
+        display: none;
+    }
+    
+    
+    .illustration2 img{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        right: 0;
+        top:  90%;
+        display: none;
+    }
+    
+    
+    .core{
+        margin-top: 50px;
+        margin-right: 0px;
+    }
+    
+    .core h1 , .offer h1{
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .offer h1{
+        text-align: center;
+    }
+    
+    .core .cards{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+     
+    }
+    
+    .offer{
+        margin-top: 50px;
+    }
+    
+    .offer .cards{
+        margin-top: 20px;
+        display: flex;
+      justify-content: center;
+        gap: 20px;
+      
+      
+    }
+    
+    
+    
+    .innovation, .collaboration, .integrity {
+      
+      
+        text-align: center;
+        width: 220px;
+        height: 180px;
+        padding: 5px;
+        padding-top: 3%;
+        border-radius: 5px;
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+        transition: 0.3s all;
+    }
+    
+    
+    
+    
+    .innovation h2 , .collaboration h2 , .integrity h2{
+        text-transform: capitalize;
+        margin-top: 10px;
+        font-size: 18px;
+       font-weight: 500;
+    }
+    
+    .innovation p , .collaboration p , .integrity p{
+    font-size: 15px;
+    margin-top: 10px;
+    
+    }
+    
+    .innovation:hover, .collaboration:hover, .integrity:hover{
+        background-color: #5369cc;
+        color: #fff;
+        cursor: pointer;
+        margin-top: -5px;
+        }
+    
+    
+    .offer .innovation , .offer .collaboration , .offer .integrity{
+        text-align: center;
+        width: 250px;
+        height: 200px;
+        padding: 5px;
+        padding-top: 3%;
+        border-radius: 5px;
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+        transition: 0.3s all;
+    }
+    
+    .offer .innovation h2 , .offer .collaboration h2 , .offer .integrity h2{
+        margin-top: 18px;
+        font-weight: 500;
+    }
+    
+    .offer .innovation p , .offer .collaboration p , .offer .integrity p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
+    .pro{
+        margin-top: 50px;
+    }
+    
+    .layout{
+        margin-top: 50px;
+        margin-left: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+        gap: 50px ; /* Add some spacing between the cards */
+    }
+    
+    .pro a{
+        text-decoration: none;
+    }
+    
+    .pro h1 {
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: 600;
+    color: #5369cc;
+    margin-left: 0px;
+    }
+     
+    
+    
+    .cover{
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 200px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .glitz{
+        width: 300px;
+        background-image: url(images/Macbook-Air-.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+     border-radius: 10px;
+        color: #fff;
+    }
+    
+    .portfolio{
+        width: 300px;
+        background-image: url(images/Screenshot\ \(100\).png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+     border-radius: 10px;
+        color: #fff;
+    }
+    
+    .glitz .company-name , .portfolio .company-name{
+        padding-top: 120px;
+        text-transform: capitalize;
+        margin-left: 10px;
+    }
+    
+    .glitz .discription , .portfolio .discription{
+        font-size: 14px;
+        width: 250px;
+        margin-left: 10px;
+    }
+    
+    
+    
+    
+    
+    
+    /* .dis .company-name{
+        margin-top: 3px;
+      
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    
+    
+    
+    .dis .discription{
+        
+        margin-top: 5px;
+        font-size: 15px;
+    } */
+    
+       .dis hr{
+        margin-top: 5px;
+        border: 1px solid #f6f6f6;
+        width: 200px;
+        margin-left: 10px;
+       }
+    
+    
+    .contactus{
+        width: 50%;
+        height: 300px;
+        background-color: #fff;
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+        margin-left: 20%;
+    }
+    
+    .contactus ul{
+        list-style-type: none;
+    }
+    
+    
+    .contactus .whatsapp , .contactus .call , .contactus .mail , .contactus .tiktok{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        
+    }
+    
+    .contactus .whatsapp p ,  .contactus .call p ,  .contactus .mail p , .contactus .tiktok p{
+        font-size: 16px;
+    }
+    
+    .contactus .call ,  .contactus .mail , .contactus .tiktok{
+        margin-top: 15px;
+    }
+    
+    ion-icon{
+        font-size: 16px;
+    }
+    
+     .contactus .call span{
+        font-size: 16px;
+    }
+    
+    .contactus .call p , .contactus .whatsapp p{
+        color: #5369cc;
+    }
+    
+    .contactus .call p span ,  .contactus.whatsapp p span{
+        color: #7a7374;
+        font-size: 16px;
+    }
+    
+    
    }
