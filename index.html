@@ -12,10 +12,10 @@
     <title>Document</title>
 </head>
 <body>
+   
+
     <div id="preloader">
     </div>
-
-
 
 
 
@@ -29,7 +29,7 @@
 <nav>
     <ul>
         <li>
-            <div class="home active">
+            <div class="home">
                 <span class="material-symbols-outlined">
                     home
                 </span>
@@ -45,7 +45,7 @@
             </div>
         </li>
         <li>
-            <div class="projects">
+            <div class="projects active">
                 <span class="material-symbols-outlined">
                     dashboard
                 </span>
@@ -84,7 +84,7 @@
         </li>
             <div class="mail">
             <ion-icon name="mail-outline"></ion-icon>
-            <p>atech5705@gmail.com</p> 
+            <p>atech5705gmail.com</p> 
         </div>
         </li>
         
@@ -101,39 +101,33 @@
 
   
         <div class="section2">
-          <div class="blob">
+            <div class="blob">
                 <img src="images/magicpattern-blob-1730312361767.png" alt="">
             </div>
-<div class="hom">
+
     <div class="top-ill">
         <div class="phone-ill">
     <img src="images/tech company-rafiki.png" alt="">
    </div>
         <div class="top">
+            <div class="text">
     <h1> Welcome to <span>A-tech</span></h1>
     <p>   your partner in building dynamic, responsive, and user-centered websites. We specialize in creating digital experiences that engage and elevate your brand, with designs tailored to captivate your audience and functionality that drives results. Discover how A-Tech can bring your vision to life, one web solution at a time.</p>
+            </div>
+    <div class="illustration">
+        <img src="images/tech company-rafiki.png" alt="">
+        </div>
    </div>
    
     </div>
 
 
 
-    <div class="phone-but">
+    <!-- <div class="phone-but">
         <button><a href="started.html">get started</a></button>
-    </div>
+    </div> -->
    
-    
-  <div class="cta">
-    <div class="start">
-        <a href="started.html" class="button-link">Get Started</a>
-    </div>
-    
-  <div class="view">
-    <button><a href="project.html">view projects</a></button>
-  </div>
-  </div>
-
-  <div class="metrics">
+    <div class="metrics">
     <div class="clients">
         <div class="num">3</div>
         <p>Number of Clients</p>
@@ -148,22 +142,18 @@
     </div>
   </div>
 
-<div class="illustration">
-<img src="images/tech company-rafiki.png" alt="">
-</div>
 
-</div>
+  <div class="cta">
+   <div class="start">
+    <button><a href="started.html">create</a></button>
+   </div>
 
+   <div class="view">
+    <button><a href="project.html">view projects</a></button>
+   </div>
+  </div>
 
-
-
-
-
-
-
-
-
-
+  
 
 
 
@@ -182,9 +172,6 @@
 
 
 
-
-
-   
 
 
 
@@ -207,6 +194,14 @@
                 </div>
             </li>
             <li>
+                <div class="create">
+                    <span class="material-symbols-outlined">
+                        add
+                        </span>
+                    <p><a href="started.html">create</a></p>
+                </div>
+            </li>
+            <li>
                 <div class="projects">
                     <span class="material-symbols-outlined">
                         dashboard
@@ -214,6 +209,7 @@
                     <p><a href="project.html">Projects</a></p>
                 </div>
             </li>
+        
             <li>
                 <div class="contact">
                     <span class="material-symbols-outlined">
@@ -229,6 +225,8 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
+<script src="script.js"></script>
 <script>
     function closepreloader(){
             document.getElementById("preloader").style.display = 'none';
@@ -239,5 +237,4 @@
         });
  </script>
 
-<script src="script.js"></script>
 </html>

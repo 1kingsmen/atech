@@ -444,6 +444,7 @@ font-size: 18px;
         left: 0;
     }
 
+    
     .navigation{
 
         width: 100%;
@@ -456,9 +457,11 @@ font-size: 18px;
         margin-top: 70px;
      border-top: 2px solid #5369cc;
       display: flex;
-      padding: 20px;
+   padding: 20px;
       justify-content: space-between;
       background-color: #fff;
+      width: 100%;
+
   }
   
   .navigation ul li{
@@ -473,7 +476,7 @@ font-size: 18px;
   
   }
   
-  .home , .about , .projects , .contact{
+  .home , .about , .projects , .contact , .create{
       display: block;
         padding-left: 0px;
        padding: 0px;
@@ -484,19 +487,19 @@ font-size: 18px;
   
  
   
-  .about , .projects , .contact{
+  .about , .projects , .contact , .create{
       margin-top: 0px;
   }
   
-  .home p a , .about p a , .projects p a , .contact p a{ 
+  .home p a , .about p a , .projects p a , .contact p a , .create a{ 
   margin-top: 5px;
       font-weight: 600;
       font-size: 16px;    
       color: #7a7374;
   }
   
-  .home span , .about span , .projects span , .contact span{
-      font-size: 20px;
+  .home span , .about span , .projects span , .contact span , .create span{
+      font-size: 24px;
       cursor: pointer;
       color: #5369cc;
   }
@@ -507,6 +510,8 @@ font-size: 18px;
     background-color: transparent;
     border-left: none;
 }
+  
+  
   
   
   
